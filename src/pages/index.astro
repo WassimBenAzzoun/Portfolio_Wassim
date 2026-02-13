@@ -2,175 +2,145 @@
 import MainLayout from '../layout/MainLayout.astro';
 import { Image } from 'astro:assets';
 import profileImage from '../assets/images/fedi.jpg';
-import { GraduationCap, Award, Code, Database, Cloud, ShieldCheck, Settings, TerminalSquare, Wind, Bot, GitMerge, Braces, Palette, Server, BrainCircuit, Link as LinkIcon, ExternalLink, Folder } from 'lucide-astro';
+import { GraduationCap, Award, Code, Database, GitMerge, Braces, Palette, Server, Link as LinkIcon, ExternalLink, Folder } from 'lucide-astro';
 export const experiences = [
     {
-        id:'Don By Uib',
-        title:'Web, Mobile & AI Developer',
-        company:'UIB',
-        companyLink:'https://www.uib.com.tn/',
+        id:'DALL',
+        title:'Developer',
+        company:'DALL',
+        companyLink:'',
         location:'Tunis, Tunisia',
-        period:'6 months (2025)',
-        summary:'As a Web, Mobile & AI Developer at UIB, I was Tasked to redesign the Current Don By UIB solution, which is a web and mobile application that allows customers to make donations to various associations. The goal was to enhance the user experience and improve the overall functionality of the application. I added various IA integrations such as , a chatbot , sentiment analysis arabizi and french , langauge detection and text ocr features. I also worked on the backend to ensure that the application was secure and efficient. The project was a success, and I was able to deliver a high-quality product that met the needs of the client.',
+        period:'11/2025 – Present',
+        summary:'Developer focused on building and maintaining software solutions.',
+        responsibilities:[],
+        skills:[],
+    },
+    {
+        id:'Refresh',
+        title:'Intern',
+        company:'Refresh',
+        companyLink:'',
+        location:'La Marsa, Tunisia',
+        period:'01/2025 – 05/2025',
+        summary:'Development of an e-learning platform.',
         responsibilities:[
-            'Redesigning the Don By UIB solution to enhance user experience.',
-            'Implementing AI integrations such as chatbot, sentiment analysis, language detection, and text OCR.',
-            'Ensuring backend security and efficiency.',
-            'Delivering a high-quality product that meets client needs.','creating a role Based application','enhance the admin experience by adding analytics and statistics features and functions to retrain arabizi model and Human in the loop process the fix the arabizi predictions',
-        ],skills:[
-            'Flutter',
-            'Dart',
-            'Python',
-            'FastAPI',
-            'Firebase',
-            'camemBERT',
-            'PaddleOCR',
-            'Pytorch',
-            'openssl',
-            'git',
-            'marBERTV2',
-            'XLM-RoBERTa',
+            'Designed the frontend with Next.js and Tailwind CSS for course, exam, and learner progress management.',
+            'Built a secure REST API with Spring Boot and MongoDB (JWT authentication, role management).',
+            'Integrated Konnect payment and a rechargeable digital wallet.',
+            'Stored videos, documents, and CVs on AWS S3 with signed URL generation.',
+            'Implemented automatic message moderation using a toxicity analysis service.',
+        ],
+        skills:[
+            'Next.js',
+            'Tailwind CSS',
+            'Spring Boot',
+            'MongoDB',
+            'JWT',
+            'AWS S3',
+            'Konnect',
         ],
     },
     {
-        id:'Votini',
-        title:'Blockchain Developer',
-        company:'Centre National Informatique (CNI)',
-        companyLink:'http://www.cni.tn/',
-        location:'Tunis, Tunisia',
-        period:'2 months (2024)',
-        summary:'As a Blockchain Developer at CNI, I was responsible for developing a voting system using blockchain technology. The goal was to create a secure and transparent voting system that could be used for various elections. I worked on the smart contracts, the frontend and the backend of the application. The project was a success, and I was able to deliver a high-quality product that met the needs of the client.',
+        id:'Linedata',
+        title:'Intern',
+        company:'Linedata',
+        companyLink:'',
+        location:'Centre Urbain Nord, Tunisia',
+        period:'06/2024 – 07/2024',
+        summary:'Training platform.',
         responsibilities:[
-            'Developing a secure and transparent voting system leverging Blockchan capabilities.',
-            'Creating smart contracts for the voting process.',
-            'Implementing the frontend and backend of the application.',
-            'Ensuring the application met client needs and security standards.',
-            'Integrating IPFS for decentralized file storage.',
-        ],skills:[
-            'Solidity',
-            'JavaScript',
-            'React',
-            'Node.js',
-            'IPFS',
-            'Web3.js',
-            'Truffle',
-            'Ganache',
-            'Metamask',
-            'Git',
+            'Designed a responsive Angular UI for training management.',
+            'Built a secure REST API with Spring Boot.',
+        ],
+        skills:[
+            'Angular',
+            'Spring Boot',
         ],
     },
 ]
 
 export const projects = [
     {
-        id: 'don-by-uib',
-        title: 'Don By UIB - Donation Platform',
-        description: 'A comprehensive web and mobile application for charitable donations with AI-powered features including chatbot assistance, sentiment analysis, and OCR capabilities.',
-        technologies: ['Flutter', 'Python', 'FastAPI', 'Firebase', 'PyTorch', 'camemBERT'],
-        link: 'https://github.com/fedei10/don-by-uib',
-        demoLink: 'https://don-by-uib.vercel.app',
-        status: 'Completed',
-        year: '2025'
-    },
-    {
-        id: 'votini-blockchain',
-        title: 'Votini - Blockchain Voting System',
-        description: 'A secure and transparent voting system built on blockchain technology with smart contracts and IPFS integration for decentralized file storage.',
-        technologies: ['Solidity', 'React', 'Node.js', 'Web3.js', 'IPFS', 'Truffle'],
-        link: 'https://github.com/fedei10/votini',
-        demoLink: 'https://votini-demo.vercel.app',
+        id: 'gestionnaire-salle-dance',
+        title: 'Dance Studio Manager',
+        description: 'Member registration and schedule management system with Angular UI, PHP backend, and MySQL database.',
+        technologies: ['Angular', 'PHP', 'MySQL'],
+        link: '',
         status: 'Completed',
         year: '2024'
     },
     {
-        id: 'ai-sentiment-analyzer',
-        title: 'Arabizi Sentiment Analysis',
-        description: 'Advanced sentiment analysis system for Arabizi (Arabic written in Latin script) and French text using transformer models and custom training pipelines.',
-        technologies: ['Python', 'PyTorch', 'marBERTV2', 'XLM-RoBERTa', 'FastAPI'],
-        link: 'https://github.com/fedei10/arabizi-sentiment',
-        status: 'In Progress',
-        year: '2024'
-    },
-    {
-        id: 'portfolio-website',
-        title: 'Personal Portfolio',
-        description: 'A modern, responsive portfolio website built with Astro featuring command palette navigation and interactive timeline.',
-        technologies: ['Astro', 'TypeScript', 'Tailwind CSS', 'DaisyUI'],
-        link: 'https://github.com/fedei10/portfolio',
-        demoLink: 'https://fedibellakhel.dev',
+        id: 'dashboard-dynamique',
+        title: 'Dynamic Dashboard',
+        description: 'Real-time monitoring system for the BT188 machine.',
+        technologies: ['PHP', 'HTML', 'SQL', 'CSS', 'Bootstrap', 'Python', 'Raspberry Pi 3 B+'],
+        link: '',
         status: 'Completed',
-        year: '2024'
+        year: '2023'
     }
 ];
 
 export const skills = [
+  { name: 'PHP', icon: Code },
   { name: 'Python', icon: Code },
-  { name: 'Dart', icon: Code },
-  { name: 'PyTorch', icon: Settings },
-  { name: 'React', icon: Bot },
-  { name: 'Next.js', icon: LinkIcon },
-  { name: 'Tailwind CSS', icon: Wind },
-  { name: 'TypeScript', icon: Code },
+  { name: 'Java', icon: Code },
+  { name: 'C#', icon: Code },
+  { name: 'C++', icon: Code },
   { name: 'JavaScript', icon: Code },
-  { name: 'HTML5', icon: Code },
-  { name: 'CSS3', icon: Palette },
+  { name: 'TypeScript', icon: Code },
+  { name: 'Angular', icon: Braces },
+  { name: 'React.js', icon: Braces },
+  { name: 'Next.js', icon: LinkIcon },
   { name: 'Node.js', icon: Server },
-  { name: 'SQL Databases', icon: Database },
-  { name: 'Git', icon: GitMerge },
-  { name: 'GitHub', icon: GitMerge  },
-  { name: 'GitHub Actions', icon: Settings },
-  { name: 'Docker', icon: TerminalSquare },
-  { name: 'Kubernetes', icon: Settings },
-  { name: 'REST APIs', icon: LinkIcon },
-  { name: 'Blockchain / Ethereum', icon: BrainCircuit },
+  { name: 'Spring Boot', icon: Server },
+  { name: 'HTML', icon: Code },
+  { name: 'CSS', icon: Palette },
+  { name: 'MySQL', icon: Database },
+  { name: 'MongoDB', icon: Database },
 ];
 
 const education = [
   {
-    institution: 'The Higher Institute of Information and Communications Technologies (ISTIC)',
-    degree: 'Bachelor Computer Science, Software Engineering',
-    period: '2023 - 2025',
-    location: 'Borj Cedria, Tunisia',
+    institution: "Higher Institute of Information and Communication Technologies (ISTIC)",
+    degree: 'Software Engineering',
+    period: '09/2022 – 05/2025',
+    location: 'Tunis, Tunisia',
   },
-   {
-    institution: 'Higher Institute of Applied Sciences and Technology of Mateur (ISSATM)',
-    degree: 'Bachelor Computer Science, Software Engineering',
-    period: '2022 - 2023',
-    location: 'Mateur, Bizerte',
-   },
   {
-    institution:'High School Ahmed amine Mourouj 4',
-    degree:'computer science baccalaureate',
-    period:'2018 - 2022',
-    location: 'Mourouj 4 , Ben Arous'
+    institution:'Mourouj 1 High School',
+    degree:'Computer Science Baccalaureate',
+    period:'09/2019 – 08/2020',
+    location: 'Mourouj, Tunisia'
   }
 ];
 
 export const certificates = [
   {
-    name: 'Big Date Engineer Certificate',
-    issuer: 'IBM',
-    year: '2025',
-    link: 'https://www.credly.com/badges/7aa2d3e5-e2db-47a0-bdb3-e0cfc956113d/linked_in_profile',
+    name: 'Industrial Bootcamp 3.0',
+    issuer: '',
+    year: '',
   },
   {
-    name: 'Applications of AI Predictive Maintenance',
-    issuer: 'Nvidia',
-    year: '2024',
-    link: 'https://learn.nvidia.com/certificates?id=vpKQW0R6RoGl5lfSYEUhhQ',
+    name: 'Big Data Engineer Certificate',
+    issuer: '',
+    year: '',
   },
   {
-    name: 'Building Transformer-Based Natural Language Processing (NLP) Applications',
-    issuer: 'Nvidia',
-    year: '2024',
-    link: 'https://learn.nvidia.com/certificates?id=fu2ox50WSwKZYNsx3p1zcg',
+    name: 'Certificate of Participation - AI Workshop',
+    issuer: '',
+    year: '',
   },
   {
-    name: 'Fundamentals of Deep Learning',
-    issuer: 'Nvidia',
-    year: '2024',
-    link: 'https://learn.nvidia.com/certificates?id=9zRJbg7nSoecwBht1UlUkg',
+    name: 'Certificate of Participation - Node.js and React',
+    issuer: '',
+    year: '',
   },
+];
+
+const languages = [
+  { name: 'Arabic', level: 'Native language' },
+  { name: 'English', level: 'Language of education' },
+  { name: 'French', level: 'Language of education' },
 ];
 
 ---
@@ -189,25 +159,14 @@ export const certificates = [
           <div>
             <h3 class="text-sm font-medium text-base-content/70 mb-2">Actions</h3>
             <div class="space-y-1">
-              <button class="command-item w-full flex items-center justify-between p-3 rounded-md hover:bg-base-200 text-left">
+              <button class="command-item w-full flex items-center justify-between p-3 rounded-md hover:bg-base-200 text-left" data-action="download-cv">
                 <div class="flex items-center gap-3">
                   <div class="w-5 h-5 text-base-content/70">📄</div>
-                  <span class="text-base-content">Download Security Resume</span>
+                  <span class="text-base-content">Download CV</span>
                 </div>
                 <div class="flex items-center gap-1 text-xs text-base-content/50">
                   <kbd class="kbd kbd-xs">ctrl</kbd>
-                  <kbd class="kbd kbd-xs">P</kbd>
-                </div>
-              </button>
-              
-              <button class="command-item w-full flex items-center justify-between p-3 rounded-md hover:bg-base-200 text-left">
-                <div class="flex items-center gap-3">
-                  <div class="w-5 h-5 text-base-content/70">📄</div>
-                  <span class="text-base-content">Download Software Engineering Resume</span>
-                </div>
-                <div class="flex items-center gap-1 text-xs text-base-content/50">
-                  <kbd class="kbd kbd-xs">ctrl</kbd>
-                  <kbd class="kbd kbd-xs">S</kbd>
+                  <kbd class="kbd kbd-xs">D</kbd>
                 </div>
               </button>
             </div>
@@ -228,27 +187,6 @@ export const certificates = [
                 </div>
               </button>
               
-              <button class="command-item w-full flex items-center justify-between p-3 rounded-md hover:bg-base-200 text-left" data-action="twitter">
-                <div class="flex items-center gap-3">
-                  <div class="w-5 h-5 text-base-content/70">𝕏</div>
-                  <span class="text-base-content">Visit X</span>
-                </div>
-                <div class="flex items-center gap-1 text-xs text-base-content/50">
-                  <kbd class="kbd kbd-xs">ctrl</kbd>
-                  <kbd class="kbd kbd-xs">X</kbd>
-                </div>
-              </button>
-              
-              <button class="command-item w-full flex items-center justify-between p-3 rounded-md hover:bg-base-200 text-left" data-action="github">
-                <div class="flex items-center gap-3">
-                  <div class="w-5 h-5 text-base-content/70">🐙</div>
-                  <span class="text-base-content">Visit GitHub</span>
-                </div>
-                <div class="flex items-center gap-1 text-xs text-base-content/50">
-                  <kbd class="kbd kbd-xs">ctrl</kbd>
-                  <kbd class="kbd kbd-xs">G</kbd>
-                </div>
-              </button>
             </div>
           </div>
 
@@ -330,38 +268,28 @@ export const certificates = [
         <div class="flex flex-col items-center text-center">
           <div class="avatar mb-5">
             <div class="w-28 h-28 rounded-full border-2 border-primary/50 overflow-hidden">
-              <Image src={profileImage || "/placeholder.svg?width=112&height=112&query=Fedi+Bellakhel+profile"} alt="Fedi Bellakhel" width={112} height={112} class="object-cover w-full h-full" />
+              <Image src={profileImage || "/placeholder.svg?width=112&height=112&query=Wassim+Ben+Azzoun+profile"} alt="Wassim Ben Azzoun" width={112} height={112} class="object-cover w-full h-full" />
             </div>
           </div>
-          <h1 class="text-2xl sm:text-3xl font-bold text-base-content">Fedi Bellakhel</h1>
-          <p class="text-md text-base-content/70 mt-1">Software Engineer</p>
+          <h1 class="text-2xl sm:text-3xl font-bold text-base-content">Wassim Ben Azzoun</h1>
+          <p class="text-md text-base-content/70 mt-1">Software Engineering Graduate</p>
           <div class="flex flex-wrap justify-center gap-x-5 gap-y-3 mt-5">
            {[
   {
-    href: "mailto:bellakhelfedi@gmail.com",
+    href: "mailto:wassimbenazzoun.tn@gmail.com",
     label: "Email",
     svgPath: "M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 4l8 5 8-5V6l8 5 8-5v2z",
     polyline: "22,6 12,13 2,6"
   },
   {
-    href: "tel:+21652155437",
+    href: "tel:+21658901316",
     label: "Phone",
     svgPath: "M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
   },
   {
-    href: "https://linkedin.com/in/fedi-bellakhel",
+    href: "https://linkedin.com/in/wassimbenazzoun",
     label: "LinkedIn",
     svgPath: "M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 4a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"
-  },
-  {
-    href: "https://github.com/fedei10",
-    label: "GitHub",
-    svgPath: "M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.22.66-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.17-1.1-1.48-1.1-1.48-.9-.62.07-.6.07-.6 1 .07 1.53 1.02 1.53 1.02.89 1.52 2.34 1.08 2.91.82.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.1.39-2 .99-2.71-.1-.25-.43-1.27.09-2.65 0 0 .83-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.92-1.3 2.75-1.02 2.75-1.02.52 1.38.19 2.4.09 2.65.61.71.99 1.61.99 2.71 0 3.85-2.34 4.7-4.57 4.95.36.31.68.91.68 1.84v2.73c0 .27.16.58.67.48A10.002 10.002 0 0 0 22 12c0-5.52-4.48-10-10-10z"
-  },
-  {
-    href: "https://www.facebook.com/fedi.bellakhel.7/",
-    label: "Facebook",
-    svgPath: "M18 2h-3a6 6 0 0 0-6 6v3H6v4h3v8h4v-8h3l1-4h-4V8a2 2 0 0 1 2-2h3z"
   }
 ].map(icon => (
   <a
@@ -394,7 +322,7 @@ export const certificates = [
       <div class="p-1">
         <h2 class="section-heading">About</h2>
         <p class="text-sm text-base-content/80 leading-relaxed">
-          I am a highly motivated and enthusiastic computer science student with a passion for acquiring new skills and knowledge. Eager to learn and grow, I thrive as a team player with excellent analytical abilities. I excel in multitasking and time management, and I adapt quickly to new challenges and environments. Committed to continuous professional and personal development, I am currently seeking a summer internship to further enhance my expertise and contribute to innovative projects.
+          Software engineering graduate building web and backend applications with a focus on clean architectures and efficient user experiences. I learn quickly, work well in teams, and deliver reliable, secure solutions.
         </p>
       </div>
 
@@ -411,6 +339,19 @@ export const certificates = [
         </div>
       </div>
 
+      <!-- Languages Section -->
+      <div class="p-1">
+        <h2 class="section-heading">Languages</h2>
+        <div class="space-y-2">
+          {languages.map(lang => (
+            <div class="flex items-center justify-between text-sm text-base-content/90 bg-base-200/60 py-1.5 px-3 rounded-md">
+              <span>{lang.name}</span>
+              <span class="text-xs text-base-content/60">{lang.level}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <!-- Certificates Section -->
       <div class="p-1">
         <h2 class="section-heading">Certificates</h2>
@@ -422,13 +363,11 @@ export const certificates = [
               </div>
               <div>
                 <h3 class="font-semibold text-base-content">
-                  {cert.link ? (
-                    <a href={cert.link} target="_blank" rel="noopener noreferrer" class="hover:underline">{cert.name}</a>
-                  ) : cert.name}
+                  {cert.name}
                 </h3>
-                <p class="text-sm text-base-content/80">{cert.issuer}</p>
+                {cert.issuer && <p class="text-sm text-base-content/80">{cert.issuer}</p>}
               </div>
-              <p class="text-sm text-base-content/60 ml-auto whitespace-nowrap pt-1">{cert.year}</p>
+              {cert.year && <p class="text-sm text-base-content/60 ml-auto whitespace-nowrap pt-1">{cert.year}</p>}
             </div>
           ))}
         </div>
@@ -473,7 +412,11 @@ export const certificates = [
                 <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-1">
                   <div>
                     <h3 class="text-md sm:text-lg font-semibold text-base-content leading-tight">
-                      {exp.title} @ <a href={exp.companyLink} target="_blank" rel="noopener noreferrer">{exp.company}</a>
+                      {exp.title} @ {exp.companyLink ? (
+                        <a href={exp.companyLink} target="_blank" rel="noopener noreferrer">{exp.company}</a>
+                      ) : (
+                        <span>{exp.company}</span>
+                      )}
                     </h3>
                     <p class="text-xs sm:text-sm text-base-content/60 mt-0.5">{exp.location}</p>
                   </div>
@@ -536,10 +479,12 @@ export const certificates = [
                       <ExternalLink class="w-4 h-4" />
                     </a>
                   )}
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" 
-                     class="btn btn-sm btn-ghost" aria-label="View Code">
-                    <github class="w-4 h-4" />
-                  </a>
+                  {project.link && (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" 
+                       class="btn btn-sm btn-ghost" aria-label="View Code">
+                      <GitMerge class="w-4 h-4" />
+                    </a>
+                  )}
                 </div>
               </div>
               
@@ -652,31 +597,15 @@ export const certificates = [
       if (!commandPalette.classList.contains('hidden')) {
         if ((e.metaKey || e.ctrlKey)) {
           switch(e.key) {
-            case 'p':
+            case 'd':
               e.preventDefault();
-              // Download Security Resume
-              window.open('/resume-security.pdf', '_blank');
-              closeCommandPalette();
-              break;
-            case 's':
-              e.preventDefault();
-              // Download Software Engineering Resume
-              window.open('/resume-software.pdf', '_blank');
+              // Download CV
+              window.open('/Wassim-Ben-Azzoun-FlowCV-Resume-20260213.pdf', '_blank');
               closeCommandPalette();
               break;
             case 'l':
               e.preventDefault();
-              window.open('https://linkedin.com/in/fedi-bellakhel', '_blank');
-              closeCommandPalette();
-              break;
-            case 'x':
-              e.preventDefault();
-              window.open('https://twitter.com/fedibellakhel', '_blank');
-              closeCommandPalette();
-              break;
-            case 'g':
-              e.preventDefault();
-              window.open('https://github.com/fedei10', '_blank');
+              window.open('https://linkedin.com/in/wassimbenazzoun', '_blank');
               closeCommandPalette();
               break;
             case 'm':
@@ -694,14 +623,11 @@ export const certificates = [
         const action = item.dataset.action;
         
         switch(action) {
+          case 'download-cv':
+            window.open('/Wassim-Ben-Azzoun-FlowCV-Resume-20260213.pdf', '_blank');
+            break;
           case 'linkedin':
-            window.open('https://linkedin.com/in/fedi-bellakhel', '_blank');
-            break;
-          case 'twitter':
-            window.open('https://twitter.com/fedibellakhel', '_blank');
-            break;
-          case 'github':
-            window.open('https://github.com/fedei10', '_blank');
+            window.open('https://linkedin.com/in/wassimbenazzoun', '_blank');
             break;
           case 'message':
             openMessageModal();
